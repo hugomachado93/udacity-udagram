@@ -51,8 +51,8 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
       await deleteLocalFiles([image]);
       return res.send(image);
     } catch (err) {
-      return res.send('Error');
       console.log(err);
+      return res.send('Error');
     }
   });
   
